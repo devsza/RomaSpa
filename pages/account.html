@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/account.css">
+    <link rel="stylesheet" href="../styles/navigation.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <script src="../scripts/account.js" defer></script>
+    <script src="../scripts/navigation.js" defer></script>
+    <script src="../scripts/footer.js" defer></script>
+    <title>Roma | Compte utilisateur connecté</title>
+</head>
+<body>
+    
+    <header></header>
+
+    <main>
+
+        <!-- tabs to other account pages -->
+        <div class="tabs">
+            <button id="user-address">Adresses</button>
+            <button id="user-payment">Moyens de paiement</button>
+            <button id="user-shipment-status">Suivi de commande</button>
+            <button id="user-history">Historique</button>
+            <button id="logout">Se déconnecter</button>
+        </div>
+
+        <!-- account information section : products and treatment reservation -->
+        <div class="account-info">
+            <h2></h2>
+            <div class="selected-products"></div>
+            <button id="reserve-treatment">Réserver un soin</button>
+        </div>
+
+        <!-- pop up window to reserve a treatment-->
+        <div class="container" id="myModal">
+
+            <span class="close">&times;</span>
+
+            <form id="reserve" class="form edit-user-form">
+                <h1>Faire votre demande de réservation via ce formulaire</h1>
+                <div class="form-field">
+                    <label for="treatment-date">Date préférée</label>
+                    <input type="date" name="treatment-date" id="treatment-date">
+                    <small></small>
+                </div>
+    
+                <div class="form-field">
+                    <label for="treatment-timeframe">Horaires souhaités</label>
+                    <input type="datetime" name="treatment-timeframe" id="treatment-timeframe">
+                    <small></small>
+                </div>
+    
+                <!-- dropdown menu of all categories -->
+                <div class="form-field">
+                    <label for="treatment-category">Catégorie</label>
+                        <select name="treatment-category" id="treatment-category" class="treatment-category" onChange="update()"></select>
+                    <small></small>
+                </div>
+    
+    
+                <div class="form-field">
+                    <label for="treatment">Soin</label>
+                    <select name="treatment" id="treatment"></select>
+                    <small></small>
+                </div>
+    
+                <div class="form-field">
+                    <label for="user-message">Message</label>
+                    <textarea name="user-message" id="user-message" cols="30" rows="10"></textarea>
+                    <small></small>
+                </div>
+
+                <div class="form-field">
+                    <button type="reset" id="reset">Réinitialiser</button>
+                    <button type="submit" id="submit">Envoyer</button>
+                </div>
+            
+            </form>
+       
+        </div> <!-- end container : reservation form -->
+
+    </main>
+
+    <footer></footer>
+
+</body>
+</html>

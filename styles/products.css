@@ -1,0 +1,242 @@
+@font-face {
+    font-family: "Roboto Regular";
+    src: url("../assets/graphic-charter/fonts/RobotoSerif_28pt-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Roboto Medium";
+    src: url("../assets/graphic-charter/fonts/RobotoSerif_28pt-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Roboto Bold";
+    src: url("../assets/graphic-charter/fonts/RobotoSerif_28pt-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Roboto Italic";
+    src: url("../assets/graphic-charter/fonts/RobotoSerif_28pt-Italic.ttf");
+}
+
+@font-face {
+    font-family: "Roboto Medium Italic";
+    src: url("../assets/graphic-charter/fonts/RobotoSerif_28pt-MediumItalic.ttf");
+}
+
+@font-face {
+    font-family: "Roboto Thin";
+    src: url("../assets/graphic-charter/fonts/RobotoSerif_28pt-Thin.ttf");
+}
+
+@font-face {
+    font-family: "Roboto Thin Italic";
+    src: url("../assets/graphic-charter/fonts/RobotoSerif_28pt-ThinItalic.ttf");
+}
+
+
+body{
+    padding:0;
+    margin:0;
+    font-family: "Roboto Regular";
+    font-size: 15px;
+}
+
+main{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header{
+    background-image: linear-gradient(180deg,rgba(5,20,1,0.6) 0%,rgba(5,20,1,0.6) 100%), url('../assets/images/backgrounds/elegant-bath-time.jpeg')!important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 3em;
+}
+
+.special-offer{
+    display: flex;
+    justify-content: center;
+    margin: 5em 0 5em 0;
+}
+.special-offer img{
+    width: 60%;
+}
+
+h1{
+    text-align: center;
+    transform: translate(0px, -275px);
+    color:white;
+    font-family: "Roboto Bold";
+    font-size: 500%;
+}
+
+h2{
+    color : #B89535;
+    font-size: 500%;
+    font-family: "Roboto Bold";
+    margin-bottom: 1em;
+    margin-top: 0px;
+}
+
+h3{
+    color : white;
+    background-color: #B89535;
+    padding: 2%;
+    font-family: "Roboto Medium";
+    font-size: 2em;
+    text-align: center;
+}
+
+h4{
+    font-size: 15px;
+    padding: 3px;
+    margin: 0;
+    color: #004b62;
+}
+
+.fathers-day{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    justify-content: space-evenly;
+}
+
+.product-list img{
+    width: 247px;
+    object-fit: contain;
+}
+
+.product-list div{
+    width: 247px;
+    padding: 12px;
+    text-align: center; 
+    color: white; 
+}
+
+.productName{
+color: #004b62;
+}
+
+button{
+    background-color: transparent;
+    color: #B89535;
+    margin: 0;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    padding: 12px;
+    border: 1px solid #B89535;
+}
+
+button:hover{
+    background-color: #B89535;
+    color: white;
+    margin: 0;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    padding: 12px;
+    border: 1px solid #B89535;
+}
+
+
+
+/*--------------------*/
+
+.product:hover {
+    background-color: #B89535;
+    box-shadow: 0 0 1px #000;
+    border-radius: 5px;
+}
+
+
+.product:hover img{
+    opacity:10%;
+}
+
+.divDescription{
+    position: absolute;
+    margin-top: -220px;
+    margin-left: -10px;;
+    opacity: 0;
+}
+
+.product:hover .divDescription {
+    transform: translateY(0px);
+    transition-delay: 0.1s;
+    opacity: 1;
+    font-family: fedra;
+    font-size: 1.2em;
+    animation: divDescription 1s;
+}
+
+@keyframes divDescription{
+    from {
+        transform : translateY(20px);
+        opacity: 0%;
+    } to {
+        transform: translateY(0);
+        opacity: 100%;
+    }
+}
+
+
+label{
+    color: #004b62;
+}
+
+#product-select {
+
+    outline:0;
+    box-shadow:none;
+    border:0!important;
+    background: white;
+    background-image: none;
+    flex: 1;
+    padding: 1em;
+    color:#B89535;
+    cursor:pointer;
+    font-size: 1em;
+    font-family: "Roboto Regular";
+    line-height: 20px;
+ }
+
+ option{
+     padding: 2em;
+ }
+
+ #product-select::-ms-expand {
+    display: none;
+ }
+ .select {
+    position: relative;
+    display: flex;
+    width: 20em;
+    height: 3em;
+    line-height: 3;
+    background: #5c6664;
+    overflow: hidden;
+    border-radius: .25em;
+ }
+ .select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 1em;
+    background: #2b2e2e;
+    cursor:pointer;
+    pointer-events:none;
+    transition:.25s all ease;
+ }
+ .select:hover::after {
+    color: #23b499;
+ }

@@ -1,0 +1,144 @@
+@font-face {
+    font-family: "Roboto Regular";
+    src: url("/assets/graphic-charter/fonts/RobotoSerif_28pt-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Roboto Medium";
+    src: url("/assets/graphic-charter/fonts/RobotoSerif_28pt-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Roboto Bold";
+    src: url("/assets/graphic-charter/fonts/RobotoSerif_28pt-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Roboto Italic";
+    src: url("/assets/graphic-charter/fonts/RobotoSerif_28pt-Italic.ttf");
+}
+
+@font-face {
+    font-family: "Roboto Medium Italic";
+    src: url("/assets/graphic-charter/fonts/RobotoSerif_28pt-MediumItalic.ttf");
+}
+
+@font-face {
+    font-family: "Roboto Thin";
+    src: url("/assets/graphic-charter/fonts/RobotoSerif_28pt-Thin.ttf");
+}
+
+@font-face {
+    font-family: "Roboto Thin Italic";
+    src: url("/assets/graphic-charter/fonts/RobotoSerif_28pt-ThinItalic.ttf");
+}
+
+
+body{
+    padding:0;
+    margin:0;
+    font-family: "Roboto Regular";
+    font-size: 15px;
+}
+
+main{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header{
+    background-image: linear-gradient(180deg,rgba(5,20,1,0.6) 0%,rgba(5,20,1,0.6) 100%), url('../assets/images/backgrounds/lounge-group-pool-mountains.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    margin-bottom: 3em;
+}
+
+.tabs{
+    margin: 10px 20px;
+}
+
+h1{
+    text-align: center;
+    transform: translate(0px, -275px);
+    color:white;
+    font-family: "Roboto Bold";
+    font-size: 500%;
+}
+
+h2{
+    color : white;
+    font-size: 500%;
+    font-family: "Roboto Bold";
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+h3{
+    color : white;
+    background-color: #004B62;
+    padding: 2%;
+    font-family: "Roboto Medium";
+    font-size: 2em;
+}
+
+a{
+    text-decoration: none;
+}
+
+h4{
+    padding: 0;
+    margin: 0;
+}
+
+.pricing-list, .vip-pricing-list{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.price-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.left-side{
+    display: flex;
+    flex-direction: column;
+    padding-right: 40px;
+}
+
+.left-side p{
+    font-family: "Roboto Thin Italic";
+}
+
+.right-side{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 30px;
+}
+
+.right-side p{
+    min-width: 65px;
+    
+}
+
+button{
+    background-color: transparent;
+    color: #B89535;
+    border: 1px solid #B89535;
+    margin: 0;
+    padding: 5px;
+}
+
+button:hover{
+    background-color: #B89535;
+    color: white;
+    border: 1px solid white;
+    margin: 0;
+    padding: 5px;
+}

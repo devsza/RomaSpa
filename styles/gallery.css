@@ -1,0 +1,184 @@
+@font-face {
+    font-family: "Roboto Regular";
+    src: url("/assets/graphic-charter/fonts/RobotoSerif_28pt-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Roboto Medium";
+    src: url("/assets/graphic-charter/fonts/RobotoSerif_28pt-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Roboto Bold";
+    src: url("/assets/graphic-charter/fonts/RobotoSerif_28pt-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Roboto Italic";
+    src: url("/assets/graphic-charter/fonts/RobotoSerif_28pt-Italic.ttf");
+}
+
+@font-face {
+    font-family: "Roboto Medium Italic";
+    src: url("/assets/graphic-charter/fonts/RobotoSerif_28pt-MediumItalic.ttf");
+}
+
+@font-face {
+    font-family: "Roboto Thin";
+    src: url("/assets/graphic-charter/fonts/RobotoSerif_28pt-Thin.ttf");
+}
+
+@font-face {
+    font-family: "Roboto Thin Italic";
+    src: url("/assets/graphic-charter/fonts/RobotoSerif_28pt-ThinItalic.ttf");
+}
+
+* {
+    font-family: "Roboto Regular";
+    margin: 0;
+    padding: 0;
+}
+
+
+header{
+    background-image: linear-gradient(180deg,rgba(5,20,1,0.6) 0%,rgba(5,20,1,0.6) 100%), url("../assets/images/backgrounds/pool-overlook-valley-sunset.jpg") !important;
+    max-height: 60vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+h1{
+    text-align: center;
+    transform: translate(0px, -275px);
+    color:white;
+    font-family: "Roboto Bold";
+    font-size: 500%;
+}
+
+h2{
+    color: #B89535;
+    width: 50%;
+}
+
+main{
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+.container-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.title-gallery {
+    width: 70%;
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 5em;
+}
+
+
+.gallery-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 50px;
+
+}
+
+.div-container {
+    display: flex;
+    justify-content: center;
+}
+
+#sauna{
+    background-image: url('../assets/images/gallery/femme-sauna.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 500px;
+}
+#ski{
+    background-image: url('../assets/images/gallery/ski.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 500px;
+}
+
+#piscine{
+    background-image: url('../assets/images/gallery/piscine.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 500px;
+}
+
+#savoir{
+    background-image: url('../assets/images/gallery/savoir-vivre.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 500px;
+}
+
+#cave{
+    background-image: url('../assets/images/gallery/cave-a-vin.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 500px;
+}
+
+#lounge{
+    background-image: url('../assets/images/gallery/lounge.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 500px;
+}
+
+#chalet{
+    background-image: url('../assets/images/gallery/chalet.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 500px;
+}
+
+.right-side {
+    width: 500px;
+    height:400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #dbb778;
+}
+
+.right-side h3 {
+    color: #4a4a49;
+    font-size: 1.5em;
+    width: 80%;
+    border-bottom: 1px solid #4a4a49;
+    padding-bottom: 1em;
+}
+
+.right-side p {
+    width: 80%;
+    line-height: 1.5em;
+    text-align: left;
+    padding-top: 1em;
+}
+
+.left-side {
+    width: 70%;
+    object-fit: cover;
+    filter: brightness(0.8);
+}
+

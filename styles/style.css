@@ -1,0 +1,286 @@
+@font-face {
+    font-family: "Roboto Regular";
+    src: url("/assets/graphic-charter/fonts/RobotoSerif_28pt-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Roboto Medium";
+    src: url("/assets/graphic-charter/fonts/RobotoSerif_28pt-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Roboto Bold";
+    src: url("/assets/graphic-charter/fonts/RobotoSerif_28pt-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Roboto Italic";
+    src: url("/assets/graphic-charter/fonts/RobotoSerif_28pt-Italic.ttf");
+}
+
+@font-face {
+    font-family: "Roboto Medium Italic";
+    src: url("/assets/graphic-charter/fonts/RobotoSerif_28pt-MediumItalic.ttf");
+}
+
+@font-face {
+    font-family: "Roboto Thin";
+    src: url("/assets/graphic-charter/fonts/RobotoSerif_28pt-Thin.ttf");
+}
+
+@font-face {
+    font-family: "Roboto Thin Italic";
+    src: url("/assets/graphic-charter/fonts/RobotoSerif_28pt-ThinItalic.ttf");
+}
+
+
+body{
+    padding:0;
+    margin:0;
+    font-family: "Roboto Regular";
+    font-size: 15px;
+}
+
+/* sections */
+section{
+    padding: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* section: introduction paragraphe, top of page*/
+.introduction{
+    width: 60%;
+    text-align: center;
+    background-color: white;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    }
+.introduction h2{
+    color: #B89535;
+    padding : 20px;
+    font-size: 3em;
+    }
+.introduction p{
+    color: #004B62;
+    line-height: 1.5em;
+}
+
+/*section: 3 divs to treatments and products */
+.offers{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 600px;
+    padding: 30px;
+    padding-bottom: 60px;
+    }
+.offers p{
+    background-color: #B89535;
+    color: white;
+    padding: 15px;
+    float: right;
+    transform: translateY(450px);
+    text-align: right;
+    }
+.offers a{
+    text-decoration: none;
+}
+
+@keyframes example {
+    0%   {transform:scale(1);}
+    50%  {transform:scale(1.1)}
+    100% {transform:scale(1);opacity:1;}
+}
+
+
+/* link towards classic treatments */
+.treatments{
+    background-image: url("../assets/images/treatments/massage-hands.jpg");
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 27%;
+}
+
+.treatments:hover{
+    animation: example 3s ease-in-out;
+}
+
+/* link towards vip treatments */
+.vip-treatments{
+    background-image: url("../assets/images/treatments/bath-woman-champagne.jpg");
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 27%;
+}
+
+.vip-treatments:hover{
+    animation: example 3s ease-in-out;
+}
+
+/* link towards products */
+.products{
+    background-image: url("../assets/images/products/products-index-photo.jpeg");
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 27%;
+}
+.products:hover{
+    animation: example 3s ease-in-out;
+}
+
+/* section: gallery */
+.gallery{
+    height: 455px; 
+    }
+.gallery-card{
+    background-color: white;
+    padding: 50px;
+    padding-left: 50px;
+    width: 500px;
+    height: max-content;
+    position: absolute;
+}
+.parallax {
+    background-image: url('../assets/images/backgrounds/lounge-view-pool-mountains.jpg');
+    height: 100%; 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+.gallery h2{
+    color: #B89535;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    }
+.gallery p{
+    line-height: 1.5em;
+    color: #004B62;
+}
+.gallery button{
+    background-color: transparent;
+    color: #B89535;
+    border: 1px solid #B89535;
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+.gallery button:hover{
+    background-color: #B89535;
+    color: white;
+    border: 1px solid white;
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+/* section: destinations*/
+.destinations{
+    display: flex;
+    flex-direction: column;
+    margin-top: 500px;
+    }
+.destinations h2{
+    color: #B89535;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    }
+.destinations p{
+    color: white;
+    transform:  translate(57px, -64px);
+    line-height: 1.5em;
+}
+
+/* section: destinations >> carrousel */
+.carousel-wrapper {
+    overflow: hidden;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-wrapper *{
+    box-sizing: border-box;
+}
+
+.carousel{
+    transform-style: preserve-3d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 98%;
+    padding: 0px;
+}
+
+.carousel__photo{
+    opacity: 0;
+    position: absolute;
+    top:0;
+    height: 90vh;
+    margin: auto;
+    padding: 1rem 4rem;
+    z-index: 100;
+    transition: transform .5s, opacity .5s, z-index .5s;
+}
+
+.carousel__photo.initial,
+.carousel__photo.active {
+  opacity: 1;
+  position: relative;
+  z-index: 900;
+}
+
+.carousel__photo.prev,
+.carousel__photo.next {
+  z-index: 800;
+}
+.carousel__photo.prev {
+  transform: translateX(-100%); /* Move 'prev' item to the left */
+}
+.carousel__photo.next {
+  transform: translateX(100%); /* Move 'next' item to the right */
+}
+
+.carousel__button--prev,
+.carousel__button--next {
+  position: absolute;
+  top:50%;
+  width: 3rem;
+  height: 3rem;
+  background-color: #FFF;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  cursor: pointer; 
+  z-index: 1001; /* Sit on top of everything */
+  border: 1px solid black;
+}
+.carousel__button--prev {
+  left:0;
+}
+.carousel__button--next {
+  right:0;
+}
+.carousel__button--prev::after,
+.carousel__button--next::after {
+  content: " ";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 50%;
+  left: 54%;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  transform: translate(-50%, -50%) rotate(135deg);
+}
+.carousel__button--next::after {
+  left: 47%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}

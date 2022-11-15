@@ -1,0 +1,205 @@
+@font-face {
+    font-family: "Roboto Regular";
+    src: url("/assets/graphic-charter/fonts/RobotoSerif_28pt-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Roboto Medium";
+    src: url("/assets/graphic-charter/fonts/RobotoSerif_28pt-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Roboto Bold";
+    src: url("/assets/graphic-charter/fonts/RobotoSerif_28pt-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Roboto Italic";
+    src: url("/assets/graphic-charter/fonts/RobotoSerif_28pt-Italic.ttf");
+}
+
+@font-face {
+    font-family: "Roboto Medium Italic";
+    src: url("/assets/graphic-charter/fonts/RobotoSerif_28pt-MediumItalic.ttf");
+}
+
+@font-face {
+    font-family: "Roboto Thin";
+    src: url("/assets/graphic-charter/fonts/RobotoSerif_28pt-Thin.ttf");
+}
+
+@font-face {
+    font-family: "Roboto Thin Italic";
+    src: url("/assets/graphic-charter/fonts/RobotoSerif_28pt-ThinItalic.ttf");
+}
+
+
+body{
+    padding:0;
+    margin:0;
+    font-family: "Roboto Regular";
+    font-size: 15px;
+}
+
+header{
+    background-image: linear-gradient(180deg,rgba(5,20,1,0.6) 0%,rgba(5,20,1,0.6) 100%), url('../assets/images/backgrounds/sauna-exterior.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    margin-bottom: 3em;
+}
+
+h1{
+    text-align: center;
+    transform: translate(0px, -275px);
+    color:white;
+    font-family: "Roboto Bold";
+    font-size: 500%;
+}
+
+:root {
+    --error-color: #dc3545;
+    --success-color: #28a745;
+    --warning-color: #ffc107;
+}
+
+.container {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2em;
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+    background-color: #fff;
+    padding: 1em;
+}
+
+.form {
+    padding: 10px 20px;
+    width: 50%;
+}
+
+.form h1 {
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-field {
+    margin-bottom: 5px;
+}
+
+.form-field label {
+    display: block;
+    color: #004B62;
+    margin-bottom: 5px;
+}
+
+.form-field input {
+    border: 1px solid #B89535;
+    border-radius: 3px;
+    padding: 10px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    display: block;
+    width: 100%;
+    background-color: white;
+}
+
+.form-field input:focus {
+    outline: none;
+    border: 2px solid #B89535;
+}
+
+.form-field.error input {
+    border-color: var(--error-color);
+}
+
+.form-field.success input {
+    border-color: var(--success-color);
+}
+
+.form-field small {
+    color: var(--error-color);
+}
+
+button{
+    background-color: transparent;
+    color: #B89535;
+    border: 1px solid #B89535;
+    margin: 0;
+    padding: 5px;
+}
+
+button:hover{
+    background-color: #B89535;
+    color: white;
+    border: 1px solid white;
+    margin: 0;
+    padding: 5px;
+}
+
+#submit {
+    background-color: transparent;
+    color: #B89535;
+    border: 1px solid #B89535;
+    margin: 0;
+    width: fit-content;
+    padding: 5px;
+}
+
+#submit:hover{
+    background-color: #B89535;
+    color: white;
+    border: 1px solid white;
+    margin: 0;
+    width: fit-content;
+    padding: 5px;
+}
+
+#sign-up-new-user{
+    background-color: transparent;
+    color: #B89535;
+    border: 1px solid #B89535;
+    margin: 0;
+    width: fit-content;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+#sign-up-new-user:hover{
+    background-color: #B89535;
+    color: white;
+    border: 1px solid white;
+    margin: 0;
+    width: fit-content;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+main a{
+    font-size: 0.5;
+    color: #B89535;
+    text-decoration: none;
+}
+
+main a:hover{
+    font-size: 0.5;
+    color: white;
+    text-decoration: none;
+}
+
+.sign-up-new-user{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    border-left: 0.5px solid gold;
+    padding-left: 30px;
+    color: #004B62;
+}
+
+.sign-up-new-user p{
+    font-size: 1.2em;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/contact.css">
+    <link rel="stylesheet" href="../styles/navigation.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <script src="../scripts/navigation.js" defer></script>
+    <script src="../scripts/footer.js" defer></script>
+    <title>Roma | Contact</title>
+</head>
+<body>
+
+    <header></header>
+        
+        <!-- main two columns -->
+        <main>
+            
+                    
+     
+
+            <!-- left side : text -->
+            <div class="left-side-contact">
+                <h2>Formulaire de Contact</h2>
+    
+                <p>Vous avez des questions? Ecrivez-nous !</p>
+          
+            </div>
+    
+            <!-- right side : contact form -->
+            <div class="right-side-contact">
+                
+                <form method="post" action="api.php">
+    
+                    <!-- user last and first name -->
+                    <label for="user-name"></label>
+                    <input type="text" name="user-name" id="user-name" placeholder="NOM Prenom" />
+    
+                    <!-- user email -->
+                    <label for="user-email"></label>
+                    <input type="email" name="user-email" id="user-email" placeholder="Adresse Mail" />
+    
+                    <!-- user message object -->
+                    <label for="user-message-object"></label>
+                    <input type="text" name="user-message-object" id="user-message-object" placeholder="Objet" />
+    
+                    <!-- user message -->
+                    <label for="user-message"></label>
+                    <textarea name="user-message" id="user-message" placeholder="Message"></textarea>
+                    
+                    <br>
+                    
+                    <!-- message submit or reset buttons -->
+                    
+                    <button> <a href="../pages/index.html"> Envoyer</button></a>
+                    <button type="reset">Réinitialiser</button>
+    
+                </form>
+    
+            </div>
+        </main>
+
+    <footer></footer>
+
+</body>
+</html>
